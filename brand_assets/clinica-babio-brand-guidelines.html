@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brand Guidelines | Clínica Dental Dr. Babío</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --azul-autoridad: #2C5F78; /* Azul petróleo profundo */
+            --blanco-calido: #FAF9F6;  /* Blanco roto */
+            --gris-carbon: #4A4A4A;    /* Gris técnico */
+            --verde-salvia: #8BA888;   /* Acento de calma */
+            --linea-fina: #DCDCDC;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--blanco-calido);
+            color: var(--gris-carbon);
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        header {
+            border-bottom: 3px solid var(--azul-autoridad);
+            padding-bottom: 20px;
+            margin-bottom: 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        .brand-title {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            font-size: 1.8rem;
+            text-transform: uppercase;
+            letter-spacing: -1px;
+            margin: 0;
+        }
+
+        .brand-subtitle {
+            font-size: 0.85rem;
+            color: #888;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        section { margin-bottom: 80px; }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .section-num {
+            color: var(--verde-salvia);
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.4rem;
+            text-transform: uppercase;
+            margin: 0;
+            flex-grow: 1;
+        }
+
+        h2::after {
+            content: "";
+            display: block;
+            height: 1px;
+            background: var(--linea-fina);
+            margin-top: 10px;
+        }
+
+        /* 01. ADN */
+        .dna-box {
+            background: white;
+            padding: 40px;
+            border-left: 5px solid var(--azul-autoridad);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        .history-tag {
+            display: inline-block;
+            background: var(--azul-autoridad);
+            color: white;
+            padding: 5px 15px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        /* 02. COLORES */
+        .palette {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+        }
+
+        .color-card {
+            background: white;
+            border: 1px solid var(--linea-fina);
+            padding: 15px;
+            text-align: center;
+        }
+
+        .swatch {
+            height: 100px;
+            margin-bottom: 15px;
+            border-radius: 2px;
+        }
+
+        /* 03. TONO */
+        .tone-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        .tone-item strong { color: var(--azul-autoridad); display: block; margin-bottom: 5px; }
+
+        /* FOOTER */
+        footer {
+            border-top: 1px solid var(--linea-fina);
+            padding-top: 40px;
+            text-align: center;
+            font-size: 0.8rem;
+            color: #aaa;
+        }
+
+        @media (max-width: 768px) {
+            .tone-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div>
+            <h1 class="brand-title">Dr. Babío</h1>
+            <span class="brand-subtitle">Guía de Identidad v1.0</span>
+        </div>
+        <div style="text-align: right;">
+            <p style="margin:0; font-size: 0.8rem;">Sevilla, España</p>
+        </div>
+    </header>
+
+    <section>
+        <div class="section-header">
+            <span class="section-num">01</span>
+            <h2>Estrategia y ADN</h2>
+        </div>
+        <div class="dna-box">
+            <span class="history-tag">Desde 1997</span>
+            <p><strong>Posicionamiento:</strong> Una clínica dental familiar consolidada que une la experiencia acumulada con la continuidad profesional de una nueva generación.</p>
+            <p><strong>Promesa:</strong> Atención dental clara, profesional y humana, diseñada para construir relaciones de confianza a largo plazo.</p>
+            <ul style="font-size: 0.9rem; padding-left: 20px;">
+                <li>Autorización Sanitaria Ministerial: 0141004303</li>
+                <li>Ubicación estratégica: Calle Canal, 2, Sevilla (41006)</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <div class="section-header">
+            <span class="section-num">02</span>
+            <h2>Sistema Cromático</h2>
+        </div>
+        <div class="palette">
+            <div class="color-card">
+                <div class="swatch" style="background-color: #2C5F78;"></div>
+                <strong>#2C5F78</strong><br><small>Azul Autoridad</small>
+            </div>
+            <div class="color-card">
+                <div class="swatch" style="background-color: #FAF9F6; border: 1px solid #eee;"></div>
+                <strong>#FAF9F6</strong><br><small>Blanco Cálido</small>
+            </div>
+            <div class="color-card">
+                <div class="swatch" style="background-color: #4A4A4A;"></div>
+                <strong>#4A4A4A</strong><br><small>Gris Carbón</small>
+            </div>
+            <div class="color-card">
+                <div class="swatch" style="background-color: #8BA888;"></div>
+                <strong>#8BA888</strong><br><small>Verde Salvia</small>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="section-header">
+            <span class="section-num">03</span>
+            <h2>Personalidad y Tono</h2>
+        </div>
+        <div class="tone-grid">
+            <div class="tone-item">
+                <strong>Claro y Tranquilizador</strong>
+                Eliminamos la incertidumbre explicando cada tratamiento con sencillez y calma.
+            </div>
+            <div class="tone-item">
+                <strong>Profesional y Humano</strong>
+                Hablamos desde la autoridad médica pero con la calidez de un trato cercano.
+            </div>
+            <div class="tone-item">
+                <strong>Local y Arraigado</strong>
+                Reforzamos nuestra identidad sevillana y el compromiso con nuestros vecinos.
+            </div>
+            <div class="tone-item">
+                <strong>Directo</strong>
+                Sin marketing agresivo ni promesas vacías; honestidad en cada consulta.
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="section-header">
+            <span class="section-num">04</span>
+            <h2>Estilo de Imagen</h2>
+            <p style="font-size: 0.85rem; color: #777; margin: 0; padding-left: 20px;">Priorizar lo Real</p>
+        </div>
+        <div style="background: #f0f0f0; padding: 30px; text-align: center; border: 1px dashed #ccc;">
+            <p style="margin: 0;"><strong>Fotografía del Equipo Real:</strong> Raúl Babio Bernal, Raúl Babio Arjona y Mª Carmen Rivero Soto.<br>
+            <small>Evitar fotos de stock de "sonrisas perfectas". Mostrar el entorno real de la clínica.</small></p>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2026 Clínica Dental Dr. Babío. Manual de Identidad Estratégica.
+    </footer>
+</div>
+
+</body>
+</html>
